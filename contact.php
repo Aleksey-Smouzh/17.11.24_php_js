@@ -12,21 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST') {
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "podaj normalny email";
         exit;
-
-
-
-
-    } 
- header("Location: podziekowanne.html");
- exit;
-}else {
-        echo "blond presywania formy";
     }
+    header("Location: podziekowanne.html");
+    exit;
+} else {
+    echo "blond presywania formy";
+}
 
-echo "Request method: ". $_SERVER['REQUEST_METHOD']
-
-
-
-
-
+echo "Request method: " . $_SERVER['REQUEST_METHOD']
 ?>

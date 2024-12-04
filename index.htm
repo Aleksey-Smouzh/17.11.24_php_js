@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>form contact</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">
+        <title>form contact</title>
+    </head>
 
-<body>
+    <body>
 
-    <div class="container">
-        <h1>Skontaktuj sie z nami</h1>
+        <div class="container">
+            <h1>Skontaktuj sie z nami</h1>
 
-        <form action="contact.php" method="POST" onsubmit="return walidacijaForm()" >
+            <form action="contact.php" method="POST"
+                onsubmit="return walidacijaForm()">
 
-            <label for="imie">Imie:</label>
-            <input type="text" id="imie" name="imie" placeholder="   Twoije imie">
+                <label for="imie">Imie:</label>
+                <input type="text" id="imie" name="imie"
+                    placeholder="   Twoije imie">
 
-            <label for="email">email:</label>
-            <input type="email" name="email" id="email" placeholder="  Twoij email">
+                <label for="email">email:</label>
+                <input type="email" name="email" id="email"
+                    placeholder="  Twoij email">
 
+                <label for="news">News:</label>
+                <textarea type="text" name="news" id="news"
+                    placeholder=" Twoija news"></textarea>
 
-            <label for="news">News:</label>
-            <textarea type="text" name="news" id="news" placeholder=" Twoija news"></textarea>
+                <button type="submit">Wysli</button>
 
-            <button type="submit">Wysli</button>
+            </form>
 
-        </form>
+            <p id="blad"></p>
 
-        <p id="blad"></p>
+        </div>
 
-
-
-    </div>
-
-
-
-
-
-
-
-
-    <script src="/form.js"></script>
-</body>
+        <script src="/form.js"></script>
+    </body>
 
 </html>
