@@ -11,7 +11,7 @@ function walidacijaForm() {
 
     }
     let wzorzecEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!wzorzecEmail.text(email)) {
+    if (!wzorzecEmail.test(email)) {
         blad.innerText = "podaj normalny mail"
         return false
     }

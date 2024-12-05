@@ -1,0 +1,4 @@
+{
+    "intelephense.completion.triggerParameterHints": true,
+    "intelephense.completion.suggestObjectOperatorStaticMethods": false
+}

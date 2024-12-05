@@ -1,5 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] === 'POST') {
+    // $imie = htmlspecialchars($_POST["imie"]);
     $imie = htmlspecialchars($_POST["imie"]);
     $email = htmlspecialchars($_POST["email"]);
     $news = htmlspecialchars($_POST["news"]);
